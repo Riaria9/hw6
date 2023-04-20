@@ -16,7 +16,8 @@ int main(int argc, char* argv[])
 		cout << "Usage: boggle-driver <size> <seed> <dictionary file>" << endl;
 		exit(1);
 	}
-	int size = atoi(argv[1]);
+	int size = atoi(argv[1]); 
+	
 	int seed = atoi(argv[2]);
 	vector<vector<char> > board = genBoard(size, seed);
 	printBoard(board);
